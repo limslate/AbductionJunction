@@ -44,7 +44,7 @@ class Move extends Phaser.Scene {
         let my = this.my;
 
         this.wave = 1;
-        
+        this.mySong.play()
 
         this.score = 0;
         this.health = 5;
@@ -76,7 +76,7 @@ class Move extends Phaser.Scene {
         this.healthText = this.add.text(10, 40, "Lives: 5", { fontSize: "20px", fill: "#fff" });
 
          this.spawnWave(this.wave); 
-         this.mySong.play()
+         
     }
 
     spawnWave(waveNum) {
