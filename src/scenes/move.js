@@ -234,10 +234,9 @@ class Move extends Phaser.Scene {
             }
         });
 
-        // Move enemy bullets
+       
         this.enemyBullets.forEach(b => b.y += speed * dt);
-
-        // Remove offscreen enemy bullets
+        
         this.enemyBullets = this.enemyBullets.filter(b => {
             if (b.y > 600) {
                 b.destroy();
