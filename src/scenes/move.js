@@ -124,6 +124,7 @@ class Move extends Phaser.Scene {
 
         // Game over
         if (this.health <= 0) {
+            this.mySong.stop()
             this.scene.start("end");
         }
 
