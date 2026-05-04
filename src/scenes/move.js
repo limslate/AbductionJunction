@@ -44,7 +44,6 @@ class Move extends Phaser.Scene {
         let my = this.my;
 
         this.wave = 1;
-        this.mySong.play()
 
         this.score = 0;
         this.health = 5;
@@ -59,7 +58,7 @@ class Move extends Phaser.Scene {
 
         this.mySound = this.sound.add("bang", 1);
         this.mySong = this.sound.add("music", 1);
-
+        this.mySong.play()
         
         my.sprite.player = this.add.sprite(this.bodyX, this.bodyY, "player");
         my.sprite.player.setScale(0.5);
